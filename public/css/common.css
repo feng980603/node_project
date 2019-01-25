@@ -1,0 +1,84 @@
+/* 公用样式 */
+html, body {
+    height: 100%;
+  }
+  
+  body {
+    display: flex;
+  }
+  
+  .layout-side {
+    /* 不受压迫 */
+    flex-shrink: 0; 
+    width: 256px;
+    height: 100%;
+    background: rgb(51, 55, 66);
+  }
+  
+  .layout-main {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    background: #f2f2f2;
+  }
+  
+  .layout-header {
+    height: 50px;
+    background: rgb(205, 213, 216);
+  }
+  
+  .layout-body {
+    flex: 1;
+    overflow-y: auto;
+    margin: 20px;
+    padding: 20px;
+    background: #fff;
+    
+  }
+  
+  .layout-side a {
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 1px solid #000;
+    color: #fff;
+    padding-left: 20px;
+  }
+  
+  
+  /* ============================= */
+  .lv-table {
+    width: 100%;
+    border: 1px solid #000;
+    border-spacing: 0;
+  }
+  
+  .lv-table th, .lv-table td {
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid #000;
+    vertical-align: middle;
+    text-align: center;
+    /* border-collapse: collapse; */
+  }
+  
+  .lv-table .banner-img {
+    display: block;
+    margin: 0 auto;
+    height: 50px;
+  }
+  #newAddBtn{
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  #paging{
+    text-align: center;
+  }
+
+
+  
+/* ========= 对 layui 的样式的覆盖================= */
+.layui-header {
+  background-color: #393D49;
+}
